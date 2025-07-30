@@ -6,27 +6,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            background-color:yellowgreen;
+            color:black;
+        }
+        button{
+            color:white;
+            background-color:black;
+            padding:5px 10px;
+            border:none;
+            border-radius:5px;
+            cursor:pointer;
+            font-size:12px;
+        }
+        button:hover{
+            background-color:darkblue;
+            transform:scale(1.1);
+        }
+        h5,h6,h1{
+            font-size:20px;
+    
+        }
+        
+        
+    </style>
+    
+       
     
 
-<h1> Javascript</h1>
+   <h1>Javascript</h1>
 
    <p id="demo">Javascript can change HTML content.</p>
-   <button type="button"onclick='document.getElementById("demo").innerHTML="Hello JavaSceipt"'>Click Me</button>
+   <button type="button"onclick='document.getElementById("demo").innerHTML="Hello JavaScript"'>Click Me</button>
    <h2>My First JavaScript</h2>
    <button type="button"onclick="document.getElementById('demo').innerHTML=Date()">Click me to display Date and Time.</button>
    <p1 id="demo"></p1>
    <script>
-    function myFunction(){
-        document.getElementById("demo").innerHTML="paragraph changed.";
-
-    }
+   
+    
    </script>
    
    
-   <h3>Demo Javascript in Head</h3>
-   <h1>udaifa</h1>
+   
+   <h3>Fruits</h3>
    <p2 id="demo">Fruits are the mature ovary of flowering plants, typically containing seeds, and are essential for nutrition, offering a variety of flavors, textures, and health benefits.</p2>
-   <button type="button"onclick="myFunction()">Try it</button>
+   <button type="button"onclick='document.getElementById("demo").innerHTML="paragraph changed"'>Try it</button>
+   <h2>Javascript Variables</h2>
+   </script>
+   <p id="demoX"></p>
+   <p id="demoY"></p>
+   <script>
+    let x=3+"13";
+    let y="la"+"zzy";
+    document.getElementById("demoX").innerHTML=x;
+    document.getElementById("demoY").innerHTML=y;
+   </script>
+   <h4>Javascript Functions</h4>
+   <p>Call a function which performs a calculation and returns the result:</p>
+   <p id="demo1"></p>
+   <script>
+    function myFunction(p1,p2){
+        return p1*p2;
+    }
+    let result=myFunction(11,3);
+    document.getElementById("demo1").innerHTML=result;
+
+   </script>
+   <h5>Javascript Math.random()</h5>
+   <p id="demo2"></p>
+   <script>
+    let text;
+    if(Math.random()<0.5){
+        text="<a href'https://www.apple.com/in/'>Visit apple</a>";
+    }else{
+        text="<a href='https://www.apple.com/in/'>Visit apple</a>";
+    }
+    document.getElementById("demo2").innerHTML=text;
+   </script>
+   <h6>Javascript if..else</h6>
+   <p>A time-based greeting:</p>
+   <p id="demo3"></p>
+   <script>
+    const time=new Date().getHours();
+    let greeting;
+    if(time<10){
+        greeting="Good morning";
+    }else if(time<20){
+        greeting="Have a nice day";
+    }else{
+        greeting="Good day";
+    }
+    document.getElementById("demo3").innerHTML=greeting;
+   </script>
+   <h1>JavaScript Arrays</h1>
+   <p id="demo4"></p>
+   <script>
+    const cars=["Minicooper","Fortuner","BMW"];
+    document.getElementById("demo4").innerHTML=cars;
+   </script>
+   
+   
+
+   
+   
+   
 
 </body>
 </html>
