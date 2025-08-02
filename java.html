@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:plum;
+            color:black;
+        }
+        button{
+             color:white;
+            background-color:black;
+            padding:5px 10px;
+            border:none;
+            border-radius:5px;
+            cursor:pointer;
+            font-size:12px;
+        }
+        button:hover{
+            background-color:blue;
+
+        }
+           
+    </style>
+</head>
+<body>
+    <h1>JavaScript</h1>
+    <p id="demou"></p>
+    <script>document.getElementById('demo').innerHTML=""</script>
+    <button onclick="shownmessage()">click</button>
+    <script src="java.js"></script>
+    <h1>JavaScript Arithmetic</h1>
+    <h2>Arithmetic Operations</h2>
+    <p id="demo"></p>
+    <script>
+        let a=3;
+        let x=(100+50)*a;
+        document.getElementById("demo").innerHTML=x;
+    </script>
+    <h1>JavaScript Assignments</h1>
+    <h2>Simple Assigment</h2>
+    <h3>The=Operator</h3>
+    <p id="demo1"></p>
+    <script>
+        let y=10;
+        document.getElementById("demo1").innerHTML="Value of y is:"+y;
+    </script>
+    <h2>JavaScript Functions</h2>
+    <p id="demo2"></p>
+    <script>
+        function myFunction(p1,p2){
+            return p1*p2;
+        }
+        let result=myFunction(4,3);
+        document.getElementById("demo2").innerHTML=result;
+    </script>
+    <h2>JS If Statement</h2>
+    <h3>Check Exam Result</h3>
+    <script>
+        let marks=85;
+        if(marks>=70){
+            document.write("You passed the exam!");
+        }
+    </script>
+    <title>JavaScript If-Else Statement</title>
+    <h2>Check Exam Result</h2>
+    <script>
+        let marks1=40;
+        if(marks1 >=50){
+            document.write("You passed the exam!");
+        }else{
+            document.write("You failed the exam.");
+        }
+    </script>
+    <h2>JavaScript Statements</h2>
+    <button type="button"onclick="myFunction()">Click Me!</button>
+    <p id="demox"></p>
+    <p id="demoy"></p>
+    <script>
+        function myFunction(){
+            document.getElementById("demox").innerHTML="Hello dudu!";
+            document.getElementById("demoy").innerHTML="How are you?";
+        }
+    </script>
+    <h2>Variables(let,const)</h2>
+    <p id="demome"></p>
+    <script>
+        let name="udaifa";
+        const age=18;
+        var city="kannur"
+        console.log=(name);
+        console.log=(age);
+        console.log=(city);
+        document.getElementById("demome").innerHTML="Name:"+name+"<br>Age:"+age+"<br>City:"+city;
+    </script>
+    <h3>JS Functions</h3>
+    <p id="demos"></p>
+    <script>
+        let x9=myFunction(8,4);
+        document.getElementById("demos").innerHTML=x9;
+        function myFunction(a,b){
+            return a*b;
+        }
+    </script>
+    <h3>if/else statement</h3>
+    <p id="demo6"></p>
+    <script>
+        let mark=70;
+        if(mark >=90){
+            result=("excellent");
+        }else if(mark >=60){
+            result=("good");
+        }else{
+            result=("fail");
+        }
+        document.getElementById("demo6").innerHTML=result;
+    </script>
+    <h2>JavaScript Arrays</h2>
+    <h3>The toString()Method</h3>
+    <p id="demo3"></p>
+    <script>
+        const fruits=["kiwi","dragonfruit","Apple","Mango","orange"];
+        let myList=fruits.toString();
+        document.getElementById("demo3").innerHTML=myList;
+
+    </script>
+    
+
+
+    
+</body>
+</html>

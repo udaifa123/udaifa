@@ -8,7 +8,7 @@
     <title>Document</title>
     <style>
         body{
-            background-color:yellowgreen;
+            background-color:pink;
             color:black;
         }
         button{
@@ -24,91 +24,106 @@
             background-color:darkblue;
             transform:scale(1.1);
         }
-        h5,h6,h1{
-            font-size:20px;
-        }
+        
         
     </style>
     
-       
     
 
    <h1>Javascript</h1>
 
-   <p id="demo">Javascript can change HTML content.</p>
-   <button type="button"onclick='document.getElementById("demo").innerHTML="Hello JavaScript"'>Click Me</button>
+   <p id="demo1">Javascript can change HTML content.</p>
+   <button type="button"onclick='document.getElementById("demo1").innerHTML="Hello JavaScript"'>Click Me</button>
    <h2>My First JavaScript</h2>
-   <button type="button"onclick="document.getElementById('demo').innerHTML=Date()">Click me to display Date and Time.</button>
-   <p1 id="demo"></p1>
-   <script>
-   
-    
-   </script>
-   
-   
-   
+   <button type="button"onclick="document.getElementById('demo2').innerHTML=Date()">Click me to display Date and Time.</button>
+   <P1 id="demo2"></P1>
+
    <h3>Fruits</h3>
-   <p2 id="demo">Fruits are the mature ovary of flowering plants, typically containing seeds, and are essential for nutrition, offering a variety of flavors, textures, and health benefits.</p2>
-   <button type="button"onclick='document.getElementById("demo").innerHTML="paragraph changed"'>Try it</button>
-   <h2>Javascript Variables</h2>
-   </script>
-   <p id="demoX"></p>
-   <p id="demoY"></p>
+   <p2 id="demo3">Fruits are the mature ovary of flowering plants, typically containing seeds, and are essential for nutrition, offering a variety of flavors, textures, and health benefits.</p2>
+   <button type="button"onclick="myFunction()">Try it</button>
    <script>
-    let x=3+"13";
-    let y="la"+"zzy";
-    document.getElementById("demoX").innerHTML=x;
-    document.getElementById("demoY").innerHTML=y;
-   </script>
-   <h4>Javascript Functions</h4>
-   <p>Call a function which performs a calculation and returns the result:</p>
-   <p id="demo1"></p>
-   <script>
-    function myFunction(p1,p2){
-        return p1*p2;
+    function myFUnction(){
+        document.getElementById("demo3").innerHTML="Paragraph changed.";
     }
-    let result=myFunction(11,3);
-    document.getElementById("demo1").innerHTML=result;
-
-   </script>
-   <h5>Javascript Math.random()</h5>
-   <p id="demo2"></p>
-   <script>
-    let text;
-    if(Math.random()<0.5){
-        text="<a href'https://www.apple.com/in/'>Visit apple</a>";
-    }else{
-        text="<a href='https://www.apple.com/in/'>Visit apple</a>";
-    }
-    document.getElementById("demo2").innerHTML=text;
-   </script>
-   <h6>Javascript if..else</h6>
-   <p>A time-based greeting:</p>
-   <p id="demo3"></p>
-   <script>
-    const time=new Date().getHours();
-    let greeting;
-    if(time<10){
-        greeting="Good morning";
-    }else if(time<20){
-        greeting="Have a nice day";
-    }else{
-        greeting="Good day";
-    }
-    document.getElementById("demo3").innerHTML=greeting;
-   </script>
-   <h1>JavaScript Arrays</h1>
-   <p id="demo4"></p>
-   <script>
-    const cars=["Minicooper","Fortuner","BMW"];
-    document.getElementById("demo4").innerHTML=cars;
-   </script>
+    </script>
    
    
 
-   
-   
-   
+    <h4>JavaScript Variables</h4>
+   <p3 id="demo4"></p3>
+   <script>
+    var x = 5;
+     var y = 6;
+    var z = x + y;
+    document.getElementById("demo4").innerHTML="The value of z is:" +z;
+    </script>
+    <br>
+    <p4 id="demo5"></p4>
+    <script>
+        let p =7;
+        let q =6;
+        let r =p + q;
+        document.getElementById("demo5").innerHTML="The value of r is:"+r;
+    </script>
+    <br> 
+    <p5 id="demo6"></p5>
+    <script>
+        const s =5;
+        const t =7;
+        const u =s + t;
+        document.getElementById("demo6").innerHTML="The value of z is:"+z;
+    </script>
+    <h5>JavaScript Strings</h5>
+    <p id="demox"></p>
+    <script>
+        let carName1 = "Volvo XC60";
+        let carName2 = 'Volvo XC60';
+        document.getElementById("demox").innerHTML=carName1+"<br>"+carName2;
+    </script>
+    <h1>JavaScript Numbers</h1>
+    <p id="demoy"></p>
+    <script>
+        let x1 = 34.00;
+        let x2 = 34;
+        let x3 = 3.14;
+        document.getElementById("demoy").innerHTML=x1+"<br>"+x2+"<br>"+x3;
+    </script>
+    <h2>JavaScript Booleans</h2>
+    <p>Booleans can have two values:true or false:</p>
+    <P id="demoz"></P>
+    <script>
+        let y1 =5;
+        let y2 =5;
+        let y3 =6;
+        document.getElementById("demoz").innerHTML=(y1 == y2) + "<br>" + (y1 ==y3);
+    </script>
+    <h1>JavaScript Arrays</h1>
+    <p>Array indexes are zero-based,which means the first item is[0].</p>
+    <p id="demol"></p>
+    <script>
+        const cars=["Saab","Volvo","BMW"];
+        document.getElementById("demol").innerHTML=cars[0];
+    </script>
+    <h2>JavaScript Objects</h2>
+    <P id="demok"></P>
+    <script>
+        const person={
+            firstName:"ayrin",
+            lastName:"ayyu",
+            age:19,
+            eyeColor:"blue"
+        };
+        document.getElementById("demok").innerHTML=person.firstName+" is "+person.age+" years old.";
+    </script>
+    <h2>JavaScript Arithmetic</h2>
+    <script>
+        let a=8;
+        let b=4;
+        document.write("Addition:"+(a+b)+"<br>");
+        document.write("Subtraction:"+(a-b)+"<br>");
+        document.write("Multiplication:"+(a*b)+"<br>");
+        document.write("Division:"+(a/b)+"<br>")
+    </script>
 
 </body>
 </html>
