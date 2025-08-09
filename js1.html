@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+          font-size:40px;
+          text-align:center; 
+          color:black;
+          background-color:hotpink; 
+        }
+        body{
+            background-color:lightpink;
+        }
+        h2{
+            font-size:30px;
+            text-align:center;
+            color:black;
+            background-color:palevioletred;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Operators&coercion</h1>
+    <h2>JavaScript Arithmetic</h2>
+    <script>
+        let a=10;
+        let b=5;
+        document.write("Addition:"+(a+b)+"<br>");
+        document.write("Subtraction:"+(a-b)+"<br>");
+        document.write("Multiplication:"+(a*b)+"<br>");
+        document.write("division:"+(a/b)+"<br>");
+        document.write("Modulus:"+(a+b)+"<br>");
+    </script>
+    <h5>Addition</h5>
+    <p id="demo1"></p>
+    <script>
+        let d=9;
+        let e=8;
+        let f=(d+e);
+        document.getElementById("demo1").innerHTML=f;
+    </script>
+    <h5>Subtraction</h5>
+    <P id="demo2"></P>
+    <script>
+        let g=7;
+        let h=6;
+        let i=(g-h);
+        document.getElementById("demo2").innerHTML=i;
+    </script>
+    <h5>Multiplication</h5>
+    <p id="demo3"></p>
+    <script>
+        let j=5;
+        let k=4;
+        let l=(j*k);
+        document.getElementById("demo3").innerHTML=l;
+    </script>
+    <h5>Division</h5>
+    <p id="demo4"></p>
+    <script>
+        let m=6;
+        let n=4;
+        let o=(m/n);
+        document.getElementById("demo4").innerHTML=o;
+    </script>
+    <h5>Modulus</h5>
+    <p id="demo5"></p>
+    <script>
+        let p=3;
+        let q=7;
+        let r=(p%q);
+        document.getElementById("demo5").innerHTML=r;
+    </script>
+    <h2>JavaScript Assigment</h2>
+    <h5>=(Equal to)</h5>
+    <p id="demo6"></p>
+    <script>
+        let y=70;
+        document.getElementById("demo6").innerHTML="value of x is:"+y;
+    </script>
+    <h5>+=(Add and Assign)</h5>
+    <p id="demo7"></p>
+    <script>
+        let x=20;
+        x+=15;
+        document.getElementById("demo7").innerHTML="value of x is:"+x;
+    </script>
+    <h5>-=(Subtract and Assign)</h5>
+    <p id="demo8"></p>
+    <script>
+        let z=80;
+        z-=55;
+        document.getElementById("demo8").innerHTML="value of z is:"+z;
+    </script>
+    <h5>*=(Multiply and Assign)</h5>
+    <P id="demo9"></P>
+    <script>
+        let s=25;
+        s=16;
+        document.getElementById("demo9").innerHTML="value of s is:"+s;
+    </script>
+    <h5>/=(Divide and Assign)</h5>
+    <p id="demo0"></p>
+    <script>
+        let t=90;
+        t=45;
+        document.getElementById("demo0").innerHTML="value of t is:"+t;
+    </script>
+    <h5>%=(Modulus and Assign)</h5>
+    <p id="demou"></p>
+    <script>
+        let u=60;
+        u=25;
+        document.getElementById("demou").innerHTML="value of u is:"+u;
+    </script>
+    <h5>**=(Exponent and Assign-power)</h5>
+    <p id="demos"></p>
+    <script>
+        let w=60;
+        w=20;
+        document.getElementById("demos").innerHTML="value of w is:"+w;
+    </script>
+    <h2>Comparison Operators</h2>
+    <h5>The==Operator</h5>
+    <p id="demol"></p>
+    <script>
+    let x1=7;
+    document.getElementById("demol").innerHTML=(x1==8);
+    </script>
+    <p id="demor"></p>
+    <script>
+        let u1=4;
+        document.getElementById("demor").innerHTML=(u1==4);
+    </script>
+    <p id="output"></p>
+    <script>
+        let c1=8;
+        document.getElementById("output").innerHTML=(c1=="8");
+    </script>
+    <h5>The===Operator</h5>
+    <p id="output1"></p>
+    <script>
+        let m1=3;
+        document.getElementById("output1").innerHTML=(m1===3);
+    </script>
+    <p id="output2"></p>
+    <script>
+        let y1=9;
+        document.getElementById("output2").innerHTML=(m1==="3");
+    </script>
+    <h5>The !=Operator</h5>
+    <p id="output3"></p>
+    <script>
+        let n1=1;
+        document.getElementById("output3").innerHTML=(n1 !=8);
+    </script>
+    <h5>The !==Operator</h5>
+    <p id="output4"></p>
+    <script>
+        let s1=3;
+        document.getElementById("output4").innerHTML=(s1 !==3);
+    </script>
+    <p id="output5"></p>
+    <script>
+        let u2=5;
+        document.getElementById("output5").innerHTML=(u2 !=="3");
+    </script>
+    <p id="output6"></p>
+    <script>
+        let s2=6;
+        document.getElementById("output6").innerHTML=(s2 !==9);
+    </script>
+    <h5>The>Operator</h5>
+    <p id="output7"></p>
+    <script>
+        let x2=6;
+        document.getElementById("output7").innerHTML=(x2>9);
+    </script>
+    <p id="output8"></p>
+    <script>
+        let b1=7;
+        document.getElementById("output8").innerHTML=(b1<9);
+    </script>
+    <h5>The >=Operator</h5>
+    <p id="output9"></p>
+    <script>
+        let g1=5;
+        document.getElementById("output9").innerHTML=(g1>=8);
+    </script>
+    <h5>The<=Operator</h5>
+    <p id="output0"></p>
+    <script>
+        let i1=4;
+        document.getElementById("output0").innerHTML=(i1<=9);
+    </script>
+    <h5>Logical Operators</h5>
+    <h6>Logical AND</h6>
+    <script>
+       let a3=5;
+       let b3=10;
+       console.log(a3>3&&b3>6);
+       console.log(a>3&&b<6);
+    </script> 
+    <h6>Logical OR</h6>
+    <script>
+        let a4=5;
+        let b4=10;
+        console.log(a4>3||b4<3);
+        console.log(a4<3||b4<3);
+    </script>
+    <p id="demo6"></p>
+    <script>
+        let h1=6;
+        let j1=3;
+        let result1=(h1<10&&j1>1);
+        let result2=(h1<10&&j1<1);
+        document.getElementById("demo6").innerHTML="(h1<10&&j1>1):"+result1+"<br>"+"(h1<10&&j1<1):"+result2;
+    </script>
+    <h6>Logical NOT</h6>
+    <script>
+        let isLoggedIn=true;
+        console.log(!isLoggedIn);
+    </script>
+    <h2>Type Coercion & Conversion</h2>
+    <h5>js string method</h5>
+    <p id="demo11"></p>
+    <script>
+        let v=132;
+        document.getElementById("demo11").innerHTML=String(v)+"<br>"+String(132)+"<br>"+String(100+32);
+    </script>
+    <h5>JavaScript Type Conversion</h5>
+    <p id="demo12"></p>
+    <script>
+        document.getElementById("demo12").innerHTML=(6+null)+"<br>"+("6"+null)+"<br>"+("6"+2)+"<br>"+("6"*"2")+"<br>"+("5"/"2")+"<br>"
+    </script>
+    <h2>Type Conversion</h2>
+    <p id="conversion"></p>
+    <script>
+        let str="123";
+        let num=Number(str);
+        let bool=Boolean(str);
+        document.getElementById("conversion").innerHTML="Original Value:"+str+"(Type:"+typeof str+")<br>"+"Converted to Number:"+num+"(Type:"+typeof num+")<br>"+"Converted to Boolean:"+bool+"(Type:"+typeof bool+")";
+    </script>
+    <h2>Type Coercion</h2>
+    <p id="coercion"></p>
+    <script>
+        let a1="5"+2;
+        let b2="5"-2;
+        let c=true+1;
+        let d1=null+1;
+        let e1=undefined+1;
+         document.getElementById("coercion").innerHTML =
+      `"5" + 2 = ${a1} (String)<br>` +
+      `"5" - 2 = ${b2} (Number)<br>` +
+      `true + 1 = ${c} (Boolean → Number)<br>` +
+      `null + 1 = ${d1} (Null → Number)<br>` +
+      `undefined + 1 = ${e1} (Undefined → NaN)`;
+    </script>
+
+    
+
+
+
+
+
+    
+</body>
+</html>

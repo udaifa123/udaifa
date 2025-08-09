@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            font-size:30px;
+            text-align:center;
+            color:white;
+            background-color:blue;
+        }
+        button{
+           color:white;
+           background-color:black;
+           padding:5px 10px;
+           border:none;
+           border-radius: 5px;
+           cursor:pointer;
+           font-size:12px;
+        }
+        button:hover{
+            background-color:darkblue;
+            transform:scale(1.1); 
+        }
+        body{
+            background-color:lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading">Welcome to My page</h1>
+    <p id="para">This is the Orginal Paragraph.</p>
+    <button onclick="changeText()">Change Text</button>
+    <button onclick="changeStyle()">Change Style</button>
+    <button onclick="addElement()">Add Element</button>
+    <button onclick="removeElement()">Remove Element</button>
+    <script>
+        function changeText(){
+            document.getElementById("heading").innerHTML="Text changed with DOM!";
+        }
+        function changeStyle(){
+            let p=document.getElementById("para");
+            p.style.color="blue";
+            p.style.fontSize="18px";
+            p.style.backgroundColor="lightblue";
+        }
+        function addElement(){
+            let newPara=document.createElement("p");
+            newPara.innerHTML="This is a New paragraph adding using DOM!";
+            document.body.appenChild(newPara);
+        }
+        function removeElement(){
+            let p=document.getElementById("para");
+            p.remove();
+        }
+        
+    </script>
+    <h1>Button that shows/hides text</h1>
+    <p>Click the "Try it"button to toggle between hiding and showing the DIV element:</p>
+    <button onclick="myFunction()">Try it</button>
+    <div id="myDiv">
+        This is my DIV element.
+    </div>
+    <p><b>Note:</b>The element will not take up any space when the display property is set to"none".</p>
+    <script>
+        function myFunction(){
+            var x=document.getElementById("myDiv");
+            if(x.style.display==="none"){
+                x.style.display="block";
+            }else{
+                x.style.display="none";
+            }
+        }
+    </script>
+    <style>
+    #myDiv{
+        width:100%;
+        padding:50px 0;
+        text-align:center;
+        background-color:aqua;
+        margin-top:20px;
+    }
+    </style>
+    <h1>The input element</h1>
+    <form action="/action_page.php">
+        <label for="fname">First name:</label>
+        <input type="text"id="fname"name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text"id="lname"name="lname"><br><br>
+        <input type="submit"value="Submit">
+    </form>
+    <p>Click the "Submit"button and the form-data will be sent to a page on the server called"action_page.php"</p>
+
+
+
+    
+
+
+    
+</body>
+</html>

@@ -15,19 +15,19 @@
         <a href="#"class="logo"><span>Uda</span>ifa</a>
         <nav class="navbar">
              <a href="#"class="active">Portfolio</a>
-             <a href="#">Home</a>
-             <a href="#">About</a>
-             <a href="#">Skill</a>
-             <a href="#">Work</a>
-             <a href="#">Education</a>
-             <a href="#">Contact</a>
+             <a href="#home">Home</a>
+             <a href="#about">About</a>
+             <a href="#skill">Skill</a>
+             <a href="#work">Work</a>
+             <a href="#education">Education</a>
+             <a href="#contact">Contact</a>
                </nav>
 
              <a href="#"class="contact">Contact Me</a>
             
 
     </header>
-    <section class="home">
+    <section id="home">
         <div class="home-content">
             <h3>Hi,</h3>
             <h1>I'am,<span>Udaifa<br></span>a Full Stack Developer</h1>
@@ -40,9 +40,8 @@
         </div>
     </section>
 
-
     
-    <section class="about">
+    <section id="about">
         <div class="about-img">
          <img src="https://www.bing.com/th/id/OIP.jMq8ptOXz9KKToB2nuDsHwHaFj?w=179&h=128&c=8&rs=1&qlt=90&o=6&cb=thwsc4&dpr=1.3&pid=3.1&rm=2">" alt="">
         </div>
@@ -54,13 +53,68 @@
         </div>
         </section>
     
-        <section class="skill">
-            <div class="skill-content">
+        <section id="skill">
+            <div id="skill-content">
                 <h3>Technical Skills</h3>
                 <p>Hi iam a full stack developer.I learned just by myself in deeple HTML&CSS and JAVASCRIPT also</p>
+                <div id="skill">
+                    <span>HTML5</span>
+                    <div id="progress-bar">
+                        <div id="progress"style="width:85%,">85%</div>
+                    </div>
+                </div>
+                <div id="skill">
+                    <span>CSS</span>
+                    <div id="progress bar">
+                        <div id="progress"style="width:90%,">90%</div>
+                    </div>
+                </div>
+                <div id="skill">
+                    <span>JAVASCRIPT</span>
+                    <div id="progress-bar">
+                        <div id="progress"style="width:50%,">50%</div>
+                    </div>
+                </div>
+            </section>
+
+                </div>
+                <section id="work">
+                    <div class="work-container">
+                            <h2>Work</h2>
+                            <img src="photo.png" width="600px"height="300px">
+                            <h3>YouTube</h3>
+                            <p>This is a static page of YouTube.This is made adding thumbnails and text &icons.</p>
+                    </div>
+                </section>
+                <section id="education">
+                    <div class="education-container">
+                        <h2>Education</h2>
+                        <h3 class="year">2023-24</h3>
+                        <p>SSLC</p>
+                        <h3 class="year">2024-25</h3>
+                        <p>HIGHER SECONDARY</p>
+                        <P>COMMERCE</P>
+                    </div>
+                </section>
+                <section id="contact">
+                    <div class="contact-container">
+                        <h2>Contact</h2>
+                        <form class="contact-form">
+                            <label>Full Name*<input type="text" placeholder="Name"required></label>
+                            <label>Email*<input type="email" placeholder="Email"required></label>
+                            <label>Phone*<input type="tel" placeholder="Phone"required></label>
+                            <label>Subject*<textarea placeholder="write subject..."required></textarea></label>
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+                </section>
+                <footer>
+                    <p>UDAIFA</p>
+                    @2025.All rights reserved.
+                </footer>
         
-          </div>
-        </section>
+          
+        
         
         
 

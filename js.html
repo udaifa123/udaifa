@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{
+            font-size:35px;
+            text-align:center;
+            color:black;
+            background-color:aqua;
+        }
+        body{
+            background-color:lightblue;
+        }
+        button{
+          color:aliceblue;
+          background-color:black ;  
+          padding:10px 35px;
+          border:none;
+          border-radius:5px;
+          cursor:pointer;
+          font-size:12px;
+
+        }
+    </style>
+</head>
+<body>
+    
+    <h2>Javascript variables</h2>
+     <script>
+        let x=5;
+        document.write("value of x  is:",x+"<br>");
+        x=15;
+        document.write("updated value of x is:",x+"<br>");
+     </script>
+     <script>
+        let a=8;
+        let b=4;
+        console.log(a);
+        document.write("value of b is:",b+"<br>");
+     </script>
+     <script>
+        var l=3;
+        var m=6;
+        document.write("value of l is:",l+"<br>");
+     </script>
+     <script>
+        var l=2;
+        l=3;
+        document.write("value of l is:",l+"<br>");
+     </script>
+     <script>
+        const u=5;
+        const s=6;
+        document.write("value of u is:",u+"<br>");
+     </script>
+     <script>
+        const w=1;
+        v=9;
+        document.write("value of v is:",v);
+     </script>
+     <h2>JS display method</h2>
+     <h4>Console.log</h4>
+     <p id="demo"></p>
+     <script>
+        let name="lazzy";
+        document.getElementById("demo").innerHTML="Heyy,"+name;
+     </script>
+     <script>
+        let perfumename="jannathul firdaous";
+        console.log("brand,"+perfumename);
+     </script>
+         <h4>Alertbox</h4>
+        <button onclick="showAlert()">Click Me</button>
+        <script>
+            function showAlert(){
+                alert("Hello,this is an alert box!");
+            }
+        </script>
+        <h2>Data types+type of operator</h2>
+        <h4>Javascript strings</h4>
+        <p id="demo1"></p>
+        <script>
+            let perfumeName1="Al haramain";
+            let perfumeName2="Jannathul Firdauos";
+            document.getElementById("demo1").innerHTML=perfumeName1+"<br>"+perfumeName2;
+        </script>
+        <h4>JavaScript Numbers</h4>
+        <p id="demo2"></p>
+        <script>
+            let z1=33.00;
+            let z2=33;
+            let z3=3.13;
+            document.getElementById("demo2").innerHTML=z1+"<br>"+z2+"<br>"+z3;
+        </script>
+        <h4>JavaScript Booleans</h4>
+        <p id="demo3"></p>
+        <script>
+            let p=4;
+            let q=4;
+            let r=5;
+            document.getElementById("demo3").innerHTML=(p==q)+"<br>"+(p===r);
+        </script>
+        <h4>unedifined</h4>
+        <p id="demo4"></p>
+        <script>
+            let fruit;
+            document.getElementById("demo4").innerHTML=fruit+"<br>"+typeof fruit;
+        </script>
+        <h4>JavaScript Objects</h4>
+        <p id="demo5"></p>
+        <script>
+            const person={
+                firstName:"shaaz",
+                lastName:"maaz",
+                age:20,
+                eyecolor:"blue"
+            };
+            document.getElementById("demo5").innerHTML=person.firstName+" is "+person.age+"years old";
+        </script>
+        <h4>JavaScript Function</h4>
+        <p id="demo6"></p>
+        <script>
+            function greet(name){
+                console.log("Hello,"+name+"!");
+            }
+            greet ("laaz");
+        </script>
+        <script>
+            function myFunction(name){
+                document.write("Hello" + name +"!")
+            }
+            myFunction("jaaz");
+        </script>
+    
+</body>
+</html>
